@@ -14,8 +14,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 1.0)
         // Override point for customization after application launch.
+        let imageView = UIImageView()
+        
+        
+        //Assigne Image
+        let image = UIImage(named: "abc")
+        imageView.image = image
+        
+        //Assign ImageView to titleView
+       
         return true
     }
 
